@@ -4,21 +4,18 @@ import {LinkedList} from "./LinkedList";
 import {Sorter} from "./Sorter"
 
 const numbersCollection = new NumbersCollections([10, 3, -5, 0])
-const sorterNum = new Sorter(numbersCollection);
-sorterNum.sort();
-console.log(sorterNum.collection);
+numbersCollection.sort();
+console.log(numbersCollection);
 
 
 const charactersCollection = new CharactersCollections("Xaayb")
-const sorterChar = new Sorter(charactersCollection);
-sorterChar.sort();
-console.log(sorterChar.collection);
+charactersCollection.sort();
+console.log(charactersCollection);
 
 const linkedList = new LinkedList();
 linkedList.add(500);
 linkedList.add(-10);
 linkedList.add(-3);
 linkedList.add(4);
-const sorterLinkedList = new Sorter(linkedList);
-sorterChar.sort();
+linkedList.sort();
 linkedList.print();
